@@ -1,0 +1,99 @@
+
+/* files page */
+.content .files-page{
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin: 0 20px 20px;
+    gap: 20px;
+}
+/* files stats */
+.content .files-stats{
+    min-width: 260px;
+}
+.content .files-stats > div{
+    border: 1px solid var(--border-color);
+}
+.content .files-stats > div > i{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    font-size: 17px;
+}
+.content .files-stats > div.blue > i{
+    background-color: rgb(0 117 255 / 20%);
+}
+.content .files-stats > div.green > i{
+    background-color: rgb(34 197 94 / 20%);
+}
+.content .files-stats > div.red > i{
+    background-color: rgb(244 67 54 / 20%);
+}
+.content .files-stats > div.orange > i{
+    background-color: rgb(245 158 11 / 20%)
+}
+.content .files-stats > div .info span:last-child{
+    margin-top: 4px;
+}
+.content .files-stats > div .size{
+    margin-left: auto;
+    color: var(--grey-color);
+}
+.content .files-stats > a{
+    margin: 15px auto 0;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+.content .files-stats > a:hover{
+    background-color: var(--blue-alt-color);
+}
+.content .files-stats > a::before{
+    content: '\f102';
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    margin-right: 10px;
+    font-size: 13px;
+    position: relative;
+}
+.content .files-stats > a:hover::before{
+    animation: click 0.9s infinite forwards;
+}
+@keyframes click{
+    0%, 100%{
+        top: 0;
+    }
+    50%{
+        top: -4px;
+    }
+}
+/* files */
+.content .files{
+    flex: 1;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.files .file i{
+    left: 10px;
+    top: 10px;
+}
+.files .file .icon img{
+    width: 64px;
+    height: 64px;
+    transition: 0.3s;
+}
+.files .file:hover .icon img{
+    transform: rotate(5deg);
+}
+.files .file .info{
+    border-top: 1px solid var(--border-color);
+}
+/* media */
+@media (max-width: 767px){
+    .content .files-page{
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+/* @media (max-width: 767px){
+    .content .files{
+        gap: 10px;
+    }
+} */

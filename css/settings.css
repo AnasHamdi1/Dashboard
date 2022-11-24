@@ -1,0 +1,373 @@
+.content .wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin: 0 20px 20px;
+}
+@media (max-width: 767px){
+    .content .wrapper{
+        grid-template-columns: minmax(200px, 1fr);
+        margin: 0 10px 10px;
+        gap: 10px;
+    }
+}
+.wrapper .box > textarea{
+    border: 1px solid #ccc;
+    min-height: 150px;
+}
+.wrapper .box > textarea::placeholder,
+.wrapper .box input::placeholder{
+    transition: var(--transition-time);
+}
+.wrapper .box > textarea:focus::placeholder,
+.wrapper .box input:focus::placeholder{
+    opacity: 0;
+}
+.wrapper .box div:last-child label.toggle{
+    position: relative;
+    display: block;
+    width: 78px;
+    height: 32px;
+    position: relative;
+    cursor: pointer;
+}
+.wrapper .box div:last-child label.toggle input[type="checkbox"]{
+    display: none;
+}
+.wrapper .box div:last-child label.toggle input[type="checkbox"] + div,
+.wrapper .box div:last-child label.toggle.active input[type="checkbox"]:checked + div{
+    border-radius: 16px;
+    background-color: #ccc;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition-time);
+}
+.wrapper .box div:last-child label.toggle input[type="checkbox"]:checked + div,
+.wrapper .box div:last-child label.toggle.active input[type="checkbox"] + div{
+    background-color: var(--blue-color);
+}
+.wrapper .box div:last-child label.toggle input[type="checkbox"] + div::before,
+.wrapper .box div:last-child label.toggle.active input[type="checkbox"]:checked + div::before{
+    content: '\f00d';
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    border-radius: 16px;
+    background-color: white;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-time);
+}
+.wrapper .box div:last-child label.toggle input[type="checkbox"]:checked + div::before,
+.wrapper .box div:last-child label.toggle.active input[type="checkbox"] + div::before{
+    content: '\f00c';
+    left: 48px;
+    background-color: white;
+    color: var(--blue-color);
+}
+.wrapper .box div:last-child label.toggle input[type="checkbox"]:checked + div::before,
+.wrapper .box div:last-child label.toggle.active input[type="checkbox"]:checked + div::before{
+    transform: translateY(-50%) rotate(-360deg);
+}
+.wrapper .box > div.form label{
+    display: block;
+    color: var(--grey-color);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.wrapper .box > div.form input{
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+}
+.wrapper .box > div.form input:not(:last-of-type){
+    margin-bottom: 10px;
+}
+.wrapper .box > div.form input:last-of-type{
+    display: inline-block;
+    cursor: no-drop;
+    background-color: #f0f4f8;
+    color: #bbb;
+    width: calc(100% - 80px);
+    margin-right: 10px;
+}
+.wrapper .box input:last-of-type + a:hover{
+    color: var(--blue-alt-color);
+}
+.wrapper .box .info:not(:last-of-type){
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+.wrapper .box .info > a.change:hover{
+    background-color: var(--blue-alt-color);
+}
+/* social */
+.wrapper .box > .social-form > div{
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 42px;
+    margin-bottom: 15px;
+}
+.wrapper .box > .social-form > div input{
+    height: 100%;
+    flex: 1;
+    background-color: #f6f6f6;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+}
+.wrapper .box > .social-form > div:focus-within i{
+    color: black;
+}
+.wrapper .box > .social-form > div i{
+    width: 40px;
+    height: 40px;
+    transition: var(--transition-time);
+}
+.wrapper .box > .social-form > a{
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+}
+.wrapper .box > .social-form > a:hover{
+    background-color: var(--blue-alt-color);
+}
+/* widgets */
+.wrapper .box .widgets-form > div:not(:last-child){
+    margin-bottom: 15px;
+}
+.wrapper .box .widgets-form > div > input{
+    display: none;
+}
+.wrapper .box .widgets-form > div > label{
+    font-weight: 500;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.wrapper .box .widgets-form > div > label::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--grey-color);
+}
+.wrapper .box .widgets-form > div > label:hover::before{
+    border-color: var(--blue-color);
+}
+.wrapper .box .widgets-form > div > label::before,
+.wrapper .box .widgets-form > div > label::after{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+}
+.wrapper .box .widgets-form > div > label::after,
+.wrapper .box .widgets-form > div.active > input:checked + label::after{
+    content: '\f00c';
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%) scale(0) rotate(360deg);
+    transition: var(--transition-time);
+}
+.wrapper .box .widgets-form > div > input:checked + label::after,
+.wrapper .box .widgets-form > div.active > input + label::after{
+    transform: translateY(-50%) scale(1) rotate(0deg);
+}
+/* Backup */
+.wrapper .box .backup > div{
+    margin-bottom: 15px;
+}
+.wrapper .box .backup > div input{
+    display: none;
+}
+.wrapper .box .backup > div label{
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.wrapper .box .backup > div label::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey-color);
+}
+.wrapper .box .backup > div input:checked + label::before{
+    border-color: var(--blue-color);
+}
+.wrapper .box .backup > div input + label::after{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    transition: var(--transition-time);
+}
+.wrapper .box .backup > div input:checked + label::after{
+    transform: translateY(-50%) scale(1);
+}
+/* services radio */
+.wrapper .box .services{
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    gap: 8px;
+}
+.wrapper .box .services div input{
+    display: none;
+}
+.wrapper .box .services div label{
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+    padding: 20px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    user-select: none;
+}
+.wrapper .box .services div input:checked + label{
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+/* updates */
+.wrapper .box .updates-form{
+    border-bottom: 1px solid var(--border-color);
+}
+.wrapper .box .updates-form > div:last-child{
+    margin-bottom: 15px;
+}
+/* automatic */
+.wrapper .box .automatic > div{
+    margin-bottom: 15px;
+}
+.wrapper .box .automatic > div input{
+    display: none;
+}
+.wrapper .box .automatic > div label{
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+}
+.wrapper .box .automatic > div input:checked + label{
+    border-color: var(--blue-color);
+    background-color: #f9f9f9;
+}
+.wrapper .box .automatic > div input:checked + label .up .info .det span:first-child{
+    color: var(--blue-color);
+}
+.wrapper .box .automatic > div label .up .info i{
+    font-size: 30px;
+    margin-right: 15px;
+}
+.wrapper .box .automatic > div:first-child label .up .info i{
+    color: #959595;
+}
+.wrapper .box .automatic > div:nth-child(2) label .up .info i{
+    color: #1874eb;
+}
+.wrapper .box .automatic > div:nth-child(3) label .up .info i{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.wrapper .box .automatic > div:nth-child(4) label .up .info i{
+    color: #30d44f;
+}
+.wrapper .box .automatic > div:nth-child(5) label .up .info i{
+    color: #f50101;
+}
+.wrapper .box .automatic > div label .up .info .det span:first-child{
+    color: black;
+}
+.wrapper .box .automatic > div label .up > a:hover{
+    background-color: var(--blue-alt-color);
+}
+.wrapper .box .automatic > a{
+    width: fit-content;
+}
+.wrapper .box .automatic > input[type="button"]{
+    font-family: inherit;
+}
+.wrapper .box .automatic > input[type="button"]:hover{
+    background-color: var(--blue-alt-color);
+}
+/* prem */
+.wrapper .box .automatic .prem{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 46, 46, .95);
+}
+.wrapper .box .automatic > input[type="button"]:focus + .prem{
+    display: block !important;
+}
+.wrapper .box .automatic .prem .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper .box .automatic .prem:hover{
+    display: block;
+}
+.wrapper .box .automatic .prem .content i{
+    color: #dedede;
+    font-size: 22px;
+}
+.wrapper .box .automatic .prem .content a{
+    color: var(--orange-color);
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 500;
+
+}
+@media (max-width: 767px){
+    .wrapper .box .services{
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+@media (max-width: 767px){
+    .wrapper .box .automatic > div label{
+        padding: 10px;
+    }
+    .wrapper .box .automatic > div label .up .info i{
+        margin-right: 10px;
+        font-size: 29px;
+    }
+    .wrapper .box .automatic > div label .up .info .det span:first-child{
+        font-size: 16px;
+    }
+}

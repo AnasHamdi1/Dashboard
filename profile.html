@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <!-- font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css links -->
+    <link rel="stylesheet" href="css/framwork.css ">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- page title  -->
+    <title>T3 - Profile</title>
+</head>
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white relative p-20">
+            <h3 class="relative txt-c uppercase">anas</h3>
+            <ul>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="index.html">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                        <span>home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="profile.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span>profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="notifications.html">
+                        <i class="fa-solid fa-bell fa-fw"></i>
+                        <span>notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="team.html">
+                        <i class="fa-solid fa-people-group fa-fw"></i>
+                        <span>Team</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="files.html">
+                        <i class="fa-solid fa-file fa-fw"></i>
+                        <span>files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="friends.html">
+                        <i class="fa-solid fa-circle-user fa-fw"></i>
+                        <span>friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="plans.html">
+                        <i class="fa-solid fa-credit-card fa-fw"></i>
+                        <span>plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-100">
+            <div class="head bg-white between-flex p-15">
+                <div class="search relative">
+                    <input class="p-10 t-03" type="search" placeholder="Search">
+                </div>
+                <div class="info d-flex align-c">
+                    <a href="notifications.html" class="c-black pointer">
+                        <span class="relative">
+                            <i class="fa-regular fa-bell fa-lg"></i>
+                        </span>
+                    </a>
+                    <a class="d-flex" href="profile.html">
+                        <img class="t-03 pointer" src="img/avatar.png " alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- main head -->
+            <h1 class="relative capitalize fw-600">profile</h1>
+            <!-- wrapper -->
+            <div class="profile-page">
+                <div class="det bg-white rad-10 d-flex align-c">
+                    <div class="img txt-c p-20">
+                        <img src="img/avatar.png" alt="" class="rad-half mb-10">
+                        <h3 class="fw-600 fs-20">Anas Hamdi</h3>
+                        <p class="c-grey fs-16 fw-500 mt-10">Level 25</p>
+                        <div class="progress rad-10 relative">
+                            <span style="width: 70%" class="rad-10 bg-blue absolute"></span>
+                        </div>
+                        <div class="stars c-orange fs-15 mt-10 mb-5">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="c-grey fw-600 fs-13">209 Rating</span>
+                    </div>
+                    <div class="info">
+                        <div class="d-flex f-wrap align-c t-03 p-20 fs-14 fw-500">
+                            <h4 class="c-grey fs-15 w-100 fw-500">General Information</h4>
+                            <div>
+                                <span class="c-grey">Full Name </span>
+                                <span class="c-black">Anas Fouda</span>
+                            </div>
+                            <div>
+                                <span class="c-grey">Gender </span>
+                                <span class="c-black">Male</span>
+                            </div>
+                            <div>
+                                <span class="c-grey">Country </span>
+                                <span class="c-black">Egypt</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="c1" checked>
+                                <label for="c1" class="relative pointer t-03"></label>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap align-c t-03 p-20 fs-14 fw-500">
+                            <h4 class="c-grey fs-15 w-100 fw-500">Personal Information</h4>
+                            <div>
+                                <span class="c-grey">Email: </span>
+                                <span class="c-black">f@an.as</span>
+                            </div>
+                            <div>
+                                <span class="c-grey">Phone: </span>
+                                <span class="c-black">012345678911</span>
+                            </div>
+                            <div>
+                                <span class="c-grey">Country </span>
+                                <span class="c-black">Egypt</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="c2">
+                                <label for="c2" class="relative pointer t-03"></label>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap align-c t-03 p-20 fs-14 fw-500">
+                            <h4 class="c-grey fs-15 w-100 fw-500">Job Information</h4>
+                            <div>
+                                <span class="c-grey">Title: </span>
+                                <span class="c-black">Full Stack Developer</span>
+                            </div>
+                            <div>
+                                <span class="c-grey">Programming Language: </span>
+                                <span class="c-black">JavaScript</span>
+                            </div>
+                            <div>
+                                <span class="c-grey">Years Of Experience: </span>
+                                <span class="c-black">+1</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="c3" checked>
+                                <label for="c3" class="relative pointer t-03"></label>
+                            </div>
+                        </div>
+                        <div class="d-flex f-wrap align-c t-03 p-20 fs-14 fw-500">
+                            <h4 class="c-grey fs-15 w-100 fw-500">Billing Information</h4>
+                            <div>
+                                <span class="c-grey">Payment Method: </span>
+                                <span class="c-black">Paypal</span>
+                            </div>
+                            <div>
+                                <span class="c-grey">Email: </span>
+                                <span class="c-black">email@website.com</span>
+                            </div>
+                            <div>
+                                <span class="c-grey">Subscription: </span>
+                                <span class="c-black">Monthly</span>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="c4">
+                                <label for="c4" class="relative pointer t-03"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-data d-flex gap-20">
+                    <div class="skills bg-white p-20 rad-10">
+                        <h2 class="fw-600 mb-10">My Skills</h2>
+                        <p class="fs-15 fw-500 c-grey mb-20">Complete Skills List</p>
+                        <ul>
+                            <li>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">HTML</span>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">Pugjs</span>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">HAML</span>
+                            </li>
+                            <li>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">CSS</span>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">Sass</span>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">Stylus</span>
+                            </li>
+                            <li>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">JavaScript</span>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">TypeScript</span>
+                            </li>
+                            <li>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">Vuejs</span>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">Reactjs</span>
+                            </li>
+                            <li>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">PHP</span>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">Laravel</span>
+                            </li>
+                            <li>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">Python</span>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">Django</span>
+                            </li>
+                            <li>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">Git</span>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">GitHub</span>
+                                <span class="fs-14 fw-500 c-black bg-eee btn-shape">Other Tools</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="latest-act bg-white rad-10 p-20">
+                        <h2 class="fw-600 mb-10">Latest Activities</h2>
+                        <p class="fs-15 fw-500 c-grey mb-20">Latest Activities Done By The User</p>
+                        <div class="d-flex align-c">
+                            <img src="img/activity-01.png" alt="" class="mr-10">
+                            <div class="info">
+                                <span class="c-black fw-500 fs-16 d-block">Store</span>
+                                <span class="c-grey fw-500 fs-15">Bought The Mastering Python Course</span>
+                            </div>
+                            <div class="det">
+                                <span class="c-black fw-500 fs-16 d-block">18:10</span>
+                                <span class="c-grey fw-500 fs-15">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-c">
+                            <img src="img/activity-02.png" alt="" class="mr-10">
+                            <div class="info">
+                                <span class="c-black fw-500 fs-16 d-block">Academy</span>
+                                <span class="c-grey fw-500 fs-15">Got The PHP Certificate</span>
+                            </div>
+                            <div class="det">
+                                <span class="c-black fw-500 fs-16 d-block">16:34</span>
+                                <span class="c-grey fw-500 fs-15">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-c">
+                            <img src="img/activity-03.png" alt="" class="mr-10">
+                            <div class="info">
+                                <span class="c-black fw-500 fs-16 d-block">Badges</span>
+                                <span class="c-grey fw-500 fs-15">Unlocked The 10 Skills Badge</span>
+                            </div>
+                            <div class="det">
+                                <span class="c-black fw-500 fs-16 d-block">12:51</span>
+                                <span class="c-grey fw-500 fs-15">Yesterday</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-c">
+                            <img src="img/activity-01.png" alt="" class="mr-10">
+                            <div class="info">
+                                <span class="c-black fw-500 fs-16 d-block">Store</span>
+                                <span class="c-grey fw-500 fs-15">Bought The Responsive Web Design Course</span>
+                            </div>
+                            <div class="det">
+                                <span class="c-black fw-500 fs-16 d-block">9:45</span>
+                                <span class="c-grey fw-500 fs-15">Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

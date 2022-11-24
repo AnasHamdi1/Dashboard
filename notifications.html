@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <!-- font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css links -->
+    <link rel="stylesheet" href="css/framwork.css ">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- page title  -->
+    <title>T3 - Notifiactions</title>
+</head>
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white relative p-20">
+            <h3 class="relative txt-c uppercase">anas</h3>
+            <ul>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="index.html">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                        <span>home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="profile.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span>profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="notifications.html">
+                        <i class="fa-solid fa-bell fa-fw"></i>
+                        <span>notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="team.html">
+                        <i class="fa-solid fa-people-group fa-fw"></i>
+                        <span>Team</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="files.html">
+                        <i class="fa-solid fa-file fa-fw"></i>
+                        <span>files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="friends.html">
+                        <i class="fa-solid fa-circle-user fa-fw"></i>
+                        <span>friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-c c-black fs-14 rad-6 p-10 t-03" href="plans.html">
+                        <i class="fa-solid fa-credit-card fa-fw"></i>
+                        <span>plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-100">
+            <div class="head bg-white between-flex p-15">
+                <div class="search relative">
+                    <input class="p-10 t-03" type="search" placeholder="Search">
+                </div>
+                <div class="info d-flex align-c">
+                    <a href="notifications.html" class="c-black pointer">
+                        <span class="relative">
+                            <i class="fa-regular fa-bell fa-lg"></i>
+                        </span>
+                    </a>
+                    <a class="d-flex" href="profile.html">
+                        <img class="t-03 pointer" src="img/avatar.png " alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- main head -->
+            <h1 class="relative capitalize fw-600">Notifications</h1>
+            <!-- wrapper -->
+            <div class="wrapper d-grid gap-10">
+                <div class="notice">
+                    <div class="shuffle">
+                        <div class="box between-flex p-15 bg-white">
+                            <span class="fw-500">Latest Notifiactions</span>
+                            <i class="fa-solid fa-shuffle pointer"></i>
+                        </div>
+                    </div>
+                    <div class="box facebook relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="online">
+                            <!-- <i class="fa-solid fa-user"></i> -->
+                            <img src="img/notice-01.jpeg" alt="">
+                        </a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">liked your post</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from facebook fw-500">Facebook</span>
+                        </div>
+                        <div class="time c-grey fs-13">2h ago</div>
+                        <div class="new c-white fw-500 fs-13">New</div>
+                    </div>
+                    <div class="box insta relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="online"><i class="fa-solid fa-user"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">reacted to your post</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from insta fw-500">Instagram</span>
+                        </div>
+                        <div class="time c-grey fs-13">5h ago</div>
+                        <div class="new c-white fw-500 fs-13">New</div>
+                    </div>
+                    <div class="box system relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="system"><i class="fa-solid fa-gear"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">Warning</span>
+                            </a>
+                            <span class="action fs-15">important message</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from system fw-500">system administrator</span>
+                        </div>
+                        <div class="time c-grey fs-13">5h ago</div>
+                    </div>
+                    <div class="box whatsapp relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="online"><img src="img/notice-04.jpeg" alt=""></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">send a message</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from whatsapp fw-500">Whatsapp</span>
+                        </div>
+                        <div class="time c-grey fs-13">7h ago</div>
+                    </div>
+                    <div class="box twitter relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="online">
+                            <img src="img/notice-02.jpeg" alt="">
+                        </a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">commented on your post</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from twitter fw-500">Twitter</span>
+                        </div>
+                        <div class="time c-grey fs-13">11h ago</div>
+                    </div>
+                    <div class="box youtube relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="online"><img src="img/notice-03.jpeg" alt=""></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">commented on your video</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from youtube fw-500">Youtube</span>
+                        </div>
+                        <div class="time c-grey fs-13">15h ago</div>
+                    </div>
+                    <div class="box youtube relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="offline"><i class="fa-solid fa-user"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">commented on your video</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from youtube fw-500">Youtube</span>
+                        </div>
+                        <div class="time c-grey fs-13">19h ago</div>
+                    </div>
+                    <div class="shuffle">
+                        <div class="box between-flex p-15 bg-white">
+                            <span class="fw-500">Oldest Notifiactions</span>
+                            <i class="fa-solid fa-shuffle pointer"></i>
+                        </div>
+                    </div>
+                    <div class="box youtube relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="offline"><i class="fa-solid fa-user"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">liked your video</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from youtube fw-500">Youtube</span>
+                        </div>
+                        <div class="time c-grey fs-13">19h ago</div>
+                    </div>
+                    <div class="box facebook relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="offline"><i class="fa-solid fa-user"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">commented on your post</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from facebook fw-500">Facebook</span>
+                        </div>
+                        <div class="time c-grey fs-13">19h ago</div>
+                    </div>
+                    <div class="box facebook relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="online"><i class="fa-solid fa-user"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">commented on your post</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from facebook fw-500">Facebook</span>
+                        </div>
+                        <div class="time c-grey fs-13">1d ago</div>
+                    </div>
+                    <div class="box facebook relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="online"><img src="img/notice-05.jpeg" alt=""></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">liked your status</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from facebook fw-500">Facebook</span>
+                        </div>
+                        <div class="time c-grey fs-13">1d ago</div>
+                    </div>
+                    <div class="box whatsapp relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="online"><i class="fa-solid fa-user"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">send a message</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from whatsapp fw-500">Whatsapp</span>
+                        </div>
+                        <div class="time c-grey fs-13">1d ago</div>
+                    </div>
+                    <div class="box insta relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="online"><i class="fa-solid fa-user"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">commented on your post</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from insta fw-500">Instagram</span>
+                        </div>
+                        <div class="time c-grey fs-13">2d ago</div>
+                    </div>
+                    <div class="box insta relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="offline"><img src="img/notice-06.jpeg" alt=""></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">liked you post</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from insta fw-500">Instagram</span>
+                        </div>
+                        <div class="time c-grey fs-13">2d ago</div>
+                    </div>
+                    <div class="box insta relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="offline"><img src="img/notice-07.webp" alt=""></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">liked your post</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from insta fw-500">Instagram</span>
+                        </div>
+                        <div class="time c-grey fs-13">2d ago</div>
+                    </div>
+                    <div class="box insta relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="offline"><i class="fa-solid fa-user"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">commented on your post</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from insta fw-500">Instagram</span>
+                        </div>
+                        <div class="time c-grey fs-13">2d ago</div>
+                    </div>
+                    <div class="box twitter relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="online"><i class="fa-solid fa-user"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">John Doe</span>
+                            </a>
+                            <span class="action fs-15">liked your post</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from twitter fw-500">Twitter</span>
+                        </div>
+                        <div class="time c-grey fs-13">2d ago</div>
+                    </div>
+                    <div class="box system relative w-100 p-15 d-flex align-c bg-white">
+                        <a href="#" class="system"><i class="fa-solid fa-gear"></i></a>
+                        <div class="info">
+                            <a href="#">
+                                <span class="c-black capitalize fw-600">Warning</span>
+                            </a>
+                            <span class="action fs-15">important message</span>
+                            <p class="c-grey">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit...
+                            </p>
+                            <span class="from system fw-500">system administrator</span>
+                        </div>
+                        <div class="time c-grey fs-13">3d ago</div>
+                    </div>
+                    <div class="text txt-c">
+                        Notifications disappear after 7 days
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

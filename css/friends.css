@@ -1,0 +1,73 @@
+.content .wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 20px 20px;
+}
+@media (max-width: 767px){
+    .content .wrapper{
+        grid-template-columns: minmax(200px, 1fr);
+        margin: 0 10px 10px;
+        gap: 10px;
+    }
+}
+.wrapper .box .contact{
+    left: 10px;
+    top: 10px;
+}
+.wrapper .box .contact i{
+    background-color: #eee;
+    color: #666;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.wrapper .box .contact i:hover{
+    color: white;
+    background-color: var(--blue-color);
+}
+.wrapper .box .info img{
+    border-radius: 50%;
+    margin: 10px 0 10px;
+    width: 100px;
+    height: 100px;
+}
+.wrapper .box .info > i{
+    border-radius: 50%;
+    margin: 10px auto 10px;
+    width: 100px;
+    height: 100px;
+    color: #a8aeb1;
+    background-color: #dddfe0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.wrapper .box .info p{
+    margin: 5px 0 10px;
+}
+.wrapper .box .icons{
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 15px 0;
+    margin: 15px 0;
+}
+.wrapper .box .icons > div{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+.wrapper .box .icons > div:not(:last-of-type){
+    margin-bottom: 10px;
+}
+.wrapper .box .icons > div i{
+    margin-right: 5px;
+}
+.wrapper .box .icons > span{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    opacity: 0.2;
+}

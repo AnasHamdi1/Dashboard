@@ -1,0 +1,66 @@
+.content .wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin: 0 20px 20px;
+}
+@media (max-width: 767px){
+    .content .wrapper{
+        grid-template-columns: minmax(200px, 1fr);
+        margin: 0 10px 10px;
+        gap: 10px;
+    }
+}
+.wrapper .project > span{
+    top: 10px;
+    right: 10px;
+}
+.wrapper .project .team{
+    margin-top: 40px;
+}
+.wrapper .project .team img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.wrapper .project .team img:hover{
+    position: relative;
+}
+.wrapper .project .team img:not(:first-child){
+    margin-left: -20px;
+}
+.wrapper .project .with{
+    justify-content: flex-end;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+}
+.wrapper .project .with span{
+    padding: 3px 8px;
+    margin-left: 5px;
+    cursor: default;
+}
+.wrapper .project .info{
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+}
+.wrapper .project .info .progress{
+    height: 8px;
+    width: 260px;
+    max-width: 100%;
+}
+.wrapper .project .info .progress span{
+    height: 100%;
+}
+@media (max-width: 767px){
+    .wrapper .project .with span{
+        margin: 5px 0 5px 5px;
+    }
+    .wrapper .project .info{
+        flex-direction: column;
+    }
+    .wrapper .project .info .progress{
+        margin-bottom: 15px;
+    }
+}

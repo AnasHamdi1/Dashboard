@@ -1,0 +1,150 @@
+.content .profile-page{
+    margin: 0 20px 20px;
+}
+/* img */
+.profile-page > .det{
+    margin: 0 0 20px;
+}
+.profile-page .det .img{
+    width: 300px;
+    border-right: 1px solid var(--border-color);
+}
+.profile-page .det .img > img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile-page .det .img p{
+    margin-bottom: 13px;
+}
+.profile-page .det .img .progress{
+    margin: 0 auto;
+    height: 6px;
+    width: 75%;
+    max-width: 100%;
+    background-color: #eee;
+}
+.profile-page .det .img .progress span{
+    left: 0;
+    bottom: 0;
+    height: 100%;
+}
+/* info */
+.profile-page .det .info{
+    width: 100%;
+}
+.profile-page .det .info > div{
+    transition: var(--transition-time);
+}
+.profile-page .det .info > div:hover{
+    background-color: #f9f9f9;
+}
+.profile-page .det .info > div:not(:last-child){
+    border-bottom: 1px solid var(--border-color);
+}
+.profile-page .det .info > div > div{
+    padding: 10px 0 0;
+    min-width: 250px;
+}
+.profile-page .det .info > div > div:last-child input{
+    display: none;
+}
+.profile-page .det .info > div > div:last-child label{
+    display: block;
+    border-radius: 16px;
+    width: 78px;
+    height: 20px;
+    background-color: #ccc;
+}
+.profile-page .det .info > div > div:last-child input:checked + label{
+    background-color: var(--blue-color);
+}
+.profile-page .det .info > div > div:last-child label::before{
+    content: '\f00d';
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 50%;
+    color: #ccc;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-time);
+}
+.profile-page .det .info > div > div:last-child input:checked + label::before{
+    content: '\f00c';
+    left: 61px;
+    color: var(--blue-color);
+}
+/* other data */
+/* skills */
+.profile-page .other-data .skills{
+    flex-grow: 1;
+}
+.profile-page .other-data .skills ul li{
+    padding: 17px 0 0;
+}
+.profile-page .other-data .skills ul li:not(:last-child){
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+}
+.profile-page .other-data .skills ul li span{
+    cursor: default;
+    display: inline-block;
+    margin: 0 0 5px;
+}
+/* latest act */
+.profile-page .other-data .latest-act{
+    flex-grow: 2;
+}
+.profile-page .other-data .latest-act > div:not(:last-child){
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+.profile-page .other-data .latest-act > div img{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+.profile-page .other-data .latest-act > div .det{
+    margin-left: auto;
+}
+.profile-page .other-data .latest-act > div .det span:first-child{
+    text-align: right;
+}
+@media (max-width: 767px){
+    .profile-page .det{
+        flex-direction: column;
+    }
+    .profile-page .det .img{
+        padding: 0;
+        padding: 10px 0 20px;
+        margin: 10px 10px 0;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+    .profile-page .det .img .progress{
+        width: 40%;
+    }
+    .profile-page .det .info > div{
+        text-align: center;
+    }
+    .profile-page .det .info > div > div{
+        min-width: 100%;
+    }
+    .profile-page .det .info > div > div:last-child label{
+        margin: 0 auto;
+    }
+    .profile-page .other-data{
+        flex-direction: column;
+    }
+}
